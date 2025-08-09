@@ -183,8 +183,6 @@ export default function GamePage() {
       }
     };
 
-    const handleKeyUp = () => setDirection(null);
-
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isGameInitialized, position]);
